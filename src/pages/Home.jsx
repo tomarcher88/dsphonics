@@ -18,10 +18,11 @@ const Home = () => {
       >
         <Header />
       </ParallaxLayer>
+      
       {/* Static background layer One */}
       <ParallaxLayer
         offset={0}
-        speed={0}
+        speed={0.1}
         factor={1.2}
         style={{
           // backgroundImage: `url(./images/large-white-space.webp)`, // Still need inline style for dynamic values
@@ -30,27 +31,11 @@ const Home = () => {
           // filter: 'grayscale(100%)',
         }}
       />
-      {/* GAP CONTENT HERE - This is from the offset and factor props of both BG layers */}
-      {/* Static background layer Two */}
 
-      <ParallaxLayer
-        offset={1.8}
-        speed={0}
-        factor={1.5}
-        className="bg-cover bg-center"
-        style={{
-          // backgroundImage: `url(https://images.unsplash.com/photo-1544572571-ab94fd872ce4?w=1920&q=80&auto=format&fit=crop)`, // Still need inline style for dynamic values
-          backgroundImage: `url(./images/live-crowd.webp)`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          minHeight: "100vh",
-        }}
-      />
-
-      {/* HERO OVERLAY */}
+      {/* HERO OVERLAY for layer one */}
       <ParallaxLayer
         offset={0}
-        speed={1.4}
+        speed={1.5}
         className="flex items-center justify-center"
       >
         <AnimatedHeroText />
@@ -60,7 +45,7 @@ const Home = () => {
         </h1> */}
       </ParallaxLayer>
 
-      {/* GAP CONTENT */}
+      {/* GAP CONTENT - Gap in between BGs with this content */}
       <ParallaxLayer
         offset={1.2}
         factor={0.6}
@@ -76,6 +61,21 @@ const Home = () => {
         />
       </ParallaxLayer>
 
+      {/* Static background layer Two */}
+
+      <ParallaxLayer
+        offset={1.9}
+        speed={0.2}
+        factor={1.5}
+        className="bg-cover bg-center"
+        style={{
+          // backgroundImage: `url(https://images.unsplash.com/photo-1544572571-ab94fd872ce4?w=1920&q=80&auto=format&fit=crop)`, // Still need inline style for dynamic values
+          backgroundImage: `url(./images/live-crowd.webp)`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          // minHeight: "100vh",
+        }}
+      />
       {/* SECOND BG IMG OVERLAY */}
       <ParallaxLayer
         offset={2}
