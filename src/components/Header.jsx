@@ -23,11 +23,7 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">D S Phonics</span>
-            <img
-              alt=""
-              src={logo}
-              className="h-10 w-auto"
-            />
+            <img alt="" src={logo} className="h-10 w-auto" />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -41,13 +37,28 @@ export default function Header() {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          <a href="/" className="text-sm/6 font-semibold text-gray-900">
+          <a
+            href="/"
+            className="font-semibold text-xl text-gray-900 font-header"
+          >
             Home
           </a>
-          <a href="/services" className="text-sm/6 font-semibold text-gray-900">
+          <a
+            href="/services"
+            className="font-semibold text-xl text-gray-900 font-header"
+          >
             Services
           </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          <a
+            href="/accreditation"
+            className="font-semibold text-xl text-gray-900 font-header"
+          >
+            Accreditation
+          </a>
+          <a
+            href="#"
+            className="font-semibold text-xl text-gray-900 font-header"
+          >
             Contact
           </a>
         </div>
@@ -63,11 +74,7 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">D S Phonics</span>
-              <img
-                alt=""
-                src={logo}
-                className="h-10 w-auto"
-              />
+              <img alt="" src={logo} className="h-10 w-auto" />
             </a>
             <button
               type="button"
@@ -82,20 +89,26 @@ export default function Header() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-4xl font-semibold text-gray-800 hover:bg-gray-50"
+                  href="/"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-4xl font-semibold text-gray-800 hover:bg-gray-50 font-header"
                 >
                   Home
                 </a>
                 <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-4xl font-semibold text-gray-800 hover:bg-gray-50"
+                  href="/services"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-4xl font-semibold text-gray-800 hover:bg-gray-50 font-header"
                 >
                   Services
                 </a>
                 <a
+                  href="/accreditation"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-4xl font-semibold text-gray-800 hover:bg-gray-50 font-header"
+                >
+                  Accreditation
+                </a>
+                <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-4xl font-semibold text-gray-800 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-4xl font-semibold text-gray-800 hover:bg-gray-50 font-header"
                 >
                   Contact
                 </a>

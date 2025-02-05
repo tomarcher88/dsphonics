@@ -18,7 +18,7 @@ const Home = () => {
       >
         <Header />
       </ParallaxLayer>
-      
+
       {/* Static background layer One */}
       <ParallaxLayer
         offset={0}
@@ -47,9 +47,10 @@ const Home = () => {
 
       {/* GAP CONTENT - Gap in between BGs with this content */}
       <ParallaxLayer
-        offset={1.2}
-        factor={0.6}
-        speed={0.5}
+        // offset={1.2}
+        // factor={0.6}
+        sticky={{ start: 1, end: 1 }}
+        speed={1}
         className="flex items-center justify-center"
       >
         <FullWidthCard
@@ -78,7 +79,8 @@ const Home = () => {
       />
       {/* SECOND BG IMG OVERLAY */}
       <ParallaxLayer
-        offset={2}
+        // offset={2}
+        sticky={{ start: 2, end: 2 }}
         speed={1.2}
         className="flex items-center justify-center"
       >

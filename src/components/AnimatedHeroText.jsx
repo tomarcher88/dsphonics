@@ -56,7 +56,7 @@ const AnimatedHeroText = () => {
             onClick={reset}
           >
             <animated.div style={{ height: innerHeight }}>
-              <span>{item}</span>
+              <span className='font-header'>{item}</span>
             </animated.div>
           </animated.div>
         ))}

@@ -3,12 +3,13 @@ import Header from "../components/Header";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import FullWidthCard from "../components/FullWidthCard";
 import TransparentFullWidthCard from "../components/TransparentFullWidthCard";
+import StaggeredCards from "../components/StaggeredCards";
 // import LogoGallery from "../components/LogoGallery";
 
 const Services = () => {
   const parallaxRef = useRef(null);
   return (
-    <Parallax ref={parallaxRef} pages={5} className="bg-white">
+    <Parallax ref={parallaxRef} pages={4} className="bg-white">
       {/* HEADER */}
       <ParallaxLayer
         sticky={{ start: 0, end: 0 }} // Only shows on first page
@@ -20,10 +21,12 @@ const Services = () => {
       <ParallaxLayer
         offset={0}
         speed={0}
-        factor={1.2}
-        className="bg-cover bg-center"
+        factor={1.1}
+        // className="bg-cover bg-center"
         style={{
-          backgroundImage: `url(https://images.unsplash.com/photo-1544511916-0148ccdeb877?w=1920&q=80&auto=format&fit=crop)`, // Still need inline style for dynamic values
+          backgroundImage: `url(./images/large-white-space.webp)`, // Still need inline style for dynamic values
+          backgroundSize: "cover",
+          filter: "grayscale(80%)",
         }}
       />
       {/* GAP CONTENT HERE - This is from the offset and factor props of both BG layers */}
@@ -33,40 +36,30 @@ const Services = () => {
         offset={1.8}
         speed={0}
         factor={1.2}
-        className="bg-cover bg-center"
+        // className="bg-cover bg-center"
         style={{
-          backgroundImage: `url(https://images.unsplash.com/photo-1544572571-ab94fd872ce4?w=1920&q=80&auto=format&fit=crop)`, // Still need inline style for dynamic values
+          backgroundImage: `url(./images/dark-office.webp)`, // Still need inline style for dynamic values
+          backgroundSize: "cover",
+          filter: "grayscale(80%)",
         }}
       />
       <ParallaxLayer
         offset={3}
         speed={0}
-        factor={1}
+        factor={1.2}
         className="bg-cover bg-center"
       >
         <div className="flex">
-          {/* <img
-            src="https://images.unsplash.com/photo-1544572571-ab94fd872ce4?w=1920&q=80&auto=format&fit=crop"
-            alt=""
-            className="w-1/2 h-auto"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1544511916-0148ccdeb877?w=1920&q=80&auto=format&fit=crop"
-            alt=""
-            className="w-1/2 h-auto"
-          /> */}
           <div
             className="bg-cover bg-center bg-no-repeat w-1/2 h-screen"
             style={{
-              backgroundImage:
-                "url(https://images.unsplash.com/photo-1544511916-0148ccdeb877?w=1920&q=80&auto=format&fit=crop)",
+              backgroundImage: `url(./images/mixing-desk-portrait.webp)`,
             }}
           ></div>
           <div
             className="bg-cover bg-center bg-no-repeat w-1/2 h-screen"
             style={{
-              backgroundImage:
-                "url(https://images.unsplash.com/photo-1533396371595-d46b0aa39bd2?q=80&w=1970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+              backgroundImage: `url(./images/grey-seating-portrait.webp)`,
             }}
           ></div>
         </div>
@@ -108,10 +101,10 @@ const Services = () => {
         className="flex items-center justify-center"
       >
         <TransparentFullWidthCard
-          header={"What do we do?"}
+          header={"Videoconference, BYOD & Presentation Spaces"}
           bodyArr={[
-            "We work closely alongside our AV & IT integration partners to to survey, design, program & commission AV systems by supplementing our partners skillbase to deliver innumerable projects of varying scopes globally.",
-            "Whether you are in the pre-sales, design or delivery phase of a project. We're certain that we will be able to provide you a service that you can rely on.",
+            "Conferencing spaces are another example of when acoustically challenging, aesthetically driven spaces can collide with the paramount requirement for high levels of speech intelligibility to allow for effective, productive communication.",
+            "Whether you need help with a full system design, an acoustic survey for an existing space, or even supplementary modelling documentation for your space or design, we can help you.",
           ]}
         />
       </ParallaxLayer>
@@ -122,14 +115,41 @@ const Services = () => {
         speed={0.8}
         className="flex items-center justify-center"
       >
-        <TransparentFullWidthCard
-          header={"What do we do?"}
-          bodyArr={[
-            "We work closely alongside our AV & IT integration partners to to survey, design, program & commission AV systems by supplementing our partners skillbase to deliver innumerable projects of varying scopes globally.",
-            "Whether you are in the pre-sales, design or delivery phase of a project. We're certain that we will be able to provide you a service that you can rely on.",
-          ]}
+        <StaggeredCards
+          cardOne={{
+            header: "Background Music",
+            content: [
+              "Creating systems that are both aesthetically subtle whilst also being capable of high performance when needed in dynamic, multi-use environments with dynamic occupancy levels can be a challenge. Thankfully we have the tools and experience to help.",
+            ],
+          }}
+          cardTwo={{
+            header: "Lecture Theatres & Auditoriums",
+            content: [
+              "Another key area where acoustics, speech inteilligibility and the lucidicty of audio program material is critical to the effective communication of ideas.",
+              "We can assist you with the design, modelling, programming and/or commissioning of auditoriums and lecture theatres of any size and have done so for a number of universities around the UK.",
+            ],
+          }}
         />
       </ParallaxLayer>
+
+      {/* <ParallaxLayer
+        speed={1.2}
+        offset={3.2}
+        className="flex justify-start items-center h-screen"
+      >
+        <div className="w-1/2 flex items-center justify-center bg-slate-400">
+          <h2>Test first one</h2>
+        </div>
+      </ParallaxLayer>
+      <ParallaxLayer
+        speed={1.5}
+        offset={3.6}
+        className="flex justify-end items-center h-screen"
+      >
+        <div className="w-1/2 flex items-center justify-center bg-slate-400">
+          <h2>Test second one</h2>
+        </div>
+      </ParallaxLayer> */}
     </Parallax>
   );
 };
