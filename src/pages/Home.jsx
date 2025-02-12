@@ -6,11 +6,12 @@ import TransparentFullWidthCard from "../components/TransparentFullWidthCard";
 import LogoGallery from "../components/LogoGallery";
 import AnimatedHeroText from "../components/AnimatedHeroText";
 import ExplodingGallery from "../components/ExplodingGallery";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const parallaxRef = useRef(null);
   return (
-    <Parallax ref={parallaxRef} pages={5} className="bg-white">
+    <Parallax ref={parallaxRef} pages={4} className="bg-white">
       {/* HEADER */}
       <ParallaxLayer
         sticky={{ start: 0, end: 0 }} // Only shows on first page
@@ -94,13 +95,14 @@ const Home = () => {
       </ParallaxLayer>
       {/* ACCREDITATION */}
       <ParallaxLayer
-        offset={3.3}
-        factor={1.5}
+        offset={3}
+        factor={1}
         speed={0.8}
         className="flex items-center justify-center"
       >
-        <LogoGallery />
+        {/* <LogoGallery /> */}
         {/* <ExplodingGallery /> */}
+        <Footer />
       </ParallaxLayer>
     </Parallax>
   );
