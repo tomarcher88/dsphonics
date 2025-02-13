@@ -20,7 +20,7 @@ const StaggeredCards = ({ cardOne, cardTwo, children = null }) => {
   };
 
   return (
-    <div className="w-11/12 flex flex-col justify-evenly h-3/4">
+    <div className="w-11/12 flex flex-col justify-between gap-20 md:gap-0 md:justify-evenly h-3/4">
       <CardSection
         header={cardOne.header}
         content={cardOne.content}

@@ -4,12 +4,13 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import FullWidthCard from "../components/FullWidthCard";
 import TransparentFullWidthCard from "../components/TransparentFullWidthCard";
 import StaggeredCards from "../components/StaggeredCards";
+import Footer from "../components/Footer";
 // import LogoGallery from "../components/LogoGallery";
 
 const Services = () => {
   const parallaxRef = useRef(null);
   return (
-    <Parallax ref={parallaxRef} pages={4} className="bg-white">
+    <Parallax ref={parallaxRef} pages={5.4} className="bg-white">
       {/* HEADER */}
       <ParallaxLayer
         sticky={{ start: 0, end: 0 }} // Only shows on first page
@@ -51,13 +52,13 @@ const Services = () => {
       >
         <div className="flex">
           <div
-            className="bg-cover bg-center bg-no-repeat w-1/2 h-screen"
+            className="bg-cover bg-center bg-no-repeat md:w-1/2 h-screen"
             style={{
               backgroundImage: `url(./images/mixing-desk-portrait.webp)`,
             }}
           ></div>
           <div
-            className="bg-cover bg-center bg-no-repeat w-1/2 h-screen"
+            className="bg-cover bg-center bg-no-repeat w-full md:w-1/2 h-screen"
             style={{
               backgroundImage: `url(./images/grey-seating-portrait.webp)`,
             }}
@@ -108,7 +109,7 @@ const Services = () => {
           ]}
         />
       </ParallaxLayer>
-      {/* ACCREDITATION */}
+      {/* DUAL BG */}
       <ParallaxLayer
         offset={3}
         factor={1}
@@ -132,24 +133,13 @@ const Services = () => {
         />
       </ParallaxLayer>
 
-      {/* <ParallaxLayer
-        speed={1.2}
-        offset={3.2}
+      <ParallaxLayer
+        speed={.5}
+        offset={4.4}
         className="flex justify-start items-center h-screen"
       >
-        <div className="w-1/2 flex items-center justify-center bg-slate-400">
-          <h2>Test first one</h2>
-        </div>
+        <Footer />
       </ParallaxLayer>
-      <ParallaxLayer
-        speed={1.5}
-        offset={3.6}
-        className="flex justify-end items-center h-screen"
-      >
-        <div className="w-1/2 flex items-center justify-center bg-slate-400">
-          <h2>Test second one</h2>
-        </div>
-      </ParallaxLayer> */}
     </Parallax>
   );
 };

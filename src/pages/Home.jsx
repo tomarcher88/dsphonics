@@ -97,7 +97,7 @@ const Home = () => {
       <ParallaxLayer
         offset={3}
         factor={1}
-        speed={0.8}
+        speed={1.2}
         className="flex items-center justify-center"
       >
         {/* <LogoGallery /> */}

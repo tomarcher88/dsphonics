@@ -21,7 +21,7 @@ export default function Header() {
         className="mx-auto flex items-center justify-between p-6 lg:px-6"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">D S Phonics</span>
             <img alt="" src={logo} className="h-10 w-auto" />
           </a>
@@ -56,7 +56,7 @@ export default function Header() {
             Accreditation
           </a>
           <a
-            href="#"
+            href="/contact"
             className="font-semibold text-xl text-gray-900 font-header"
           >
             Contact
@@ -72,7 +72,7 @@ export default function Header() {
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">D S Phonics</span>
               <img alt="" src={logo} className="h-10 w-auto" />
             </a>
@@ -107,7 +107,7 @@ export default function Header() {
                   Accreditation
                 </a>
                 <a
-                  href="#"
+                  href="/contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-4xl font-semibold text-gray-800 hover:bg-gray-50 font-header"
                 >
                   Contact
