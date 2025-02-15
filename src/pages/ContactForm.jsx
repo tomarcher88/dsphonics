@@ -19,7 +19,7 @@ const ContactForm = () => {
             </p> */}
           </div>
           <form
-            netlify
+            // netlify
             method="POST"
             name="contact"
             className="mx-auto mt-16 max-w-xl sm:mt-20"
