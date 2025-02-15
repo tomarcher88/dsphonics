@@ -5,7 +5,7 @@ const TransparentFullWidthCard = ({ header, bodyArr, children = null }) => {
         <h2 className="text-4xl font-bold text-center mb-6 text-slate-100">{header}</h2>
         {bodyArr.map((body, index) => (
           <p
-            className="text-xl text-slate-100 text-center max-w-3xl mx-auto mt-2"
+            className="text-lg text-slate-100 text-center max-w-3xl mx-auto mt-2"
             key={index}
           >
             {body}

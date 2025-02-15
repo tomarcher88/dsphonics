@@ -25,7 +25,7 @@ const Accreditation = () => {
           header={"Our Accreditations"}
           bodyArr={[
             "In an industry driven by precision, innovation, and ever-evolving technology, maintaining the highest standards of expertise is not just a commitment—it’s a necessity. At DSPhonics, we take pride in holding a comprehensive range of industry certifications that validate our technical proficiency, product knowledge, and adherence to best practices. These accreditations ensure that we remain at the forefront of AV solutions, equipped with the latest tools and expertise to deliver seamless, high-quality results.",
-            "By continuously investing in professional development and staying certified on the latest technologies and protocols, we provide our partners and clients with the confidence that their projects are in expert hands. Whether it’s system design, integration, or commissioning, our certified expertise guarantees a level of service that meets and exceeds industry benchmarks.",
+            // "By continuously investing in professional development and staying certified on the latest technologies and protocols, we provide our partners and clients with the confidence that their projects are in expert hands. Whether it’s system design, integration, or commissioning, our certified expertise guarantees a level of service that meets and exceeds industry benchmarks.",
           ]}
         />
       </article>

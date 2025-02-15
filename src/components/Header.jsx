@@ -61,6 +61,12 @@ export default function Header() {
           >
             Contact
           </a>
+          <a
+            href="/contact-form"
+            className="font-semibold text-xl text-gray-900 font-header"
+          >
+            Contact Form
+          </a>
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
       </nav>
@@ -111,6 +117,12 @@ export default function Header() {
                   className="-mx-3 block rounded-lg px-3 py-2 text-4xl font-semibold text-gray-800 hover:bg-gray-50 font-header"
                 >
                   Contact
+                </a>
+                <a
+                  href="/contact-form"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-4xl font-semibold text-gray-800 hover:bg-gray-50 font-header"
+                >
+                  Contact Form
                 </a>
               </div>
             </div>
